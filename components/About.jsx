@@ -155,12 +155,13 @@ const About = () => {
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
                     <h3 className="h3 mb-4">
-                      Unmatched Service Quality for Over 10 Years
+                      I'm a Fresh Gradute of Informatics Engineering
                     </h3>
                     <p className="subtitle max-w-xl max-auto xl:mx-0">
-                      I specialize in crafting intuitive website with
-                      cutting-edge technology, delivering dynamic and enganging
-                      user experiences.
+                      I am interested in the frontend developer field because I
+                      believe that good interface design can transform how users
+                      interact with a product, and I want to be a part of that
+                      process.
                     </p>
                     {/* icons */}
                     <div className="grid xl:grid-cols-2 gap-4 mb-12">
