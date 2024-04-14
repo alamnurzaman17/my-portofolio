@@ -11,19 +11,19 @@ import Link from "next/link";
 
 const icons = [
   {
-    path: "/",
+    path: "https://youtube.com/@sirlam17?si=WZ_xohBX3NH_MoOS",
     name: <RiYoutubeFill />,
   },
   {
-    path: "/",
+    path: "https://www.linkedin.com/in/alamnurzaman/",
     name: <RiLinkedinFill />,
   },
   {
-    path: "/",
+    path: "https://github.com/alamnurzaman17",
     name: <RiGithubFill />,
   },
   {
-    path: "/",
+    path: "https://www.instagram.com/alam_nurzaman?igsh=MzNlNGNkZWQ4Mg==",
     name: <RiInstagramFill />,
   },
 ];
