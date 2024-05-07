@@ -12,7 +12,7 @@ const Footer = () => {
           />
           {/* copyright */}
           <div className="text-muted-foreground">
-            Copyright &copy; Alam Nurzaman. All rights reserved.
+            Copyright &copy; Alam Nurzaman.
           </div>
         </div>
       </div>

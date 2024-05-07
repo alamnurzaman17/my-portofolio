@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { Button } from "./ui/button";
 import { Download, Send } from "lucide-react";
@@ -14,7 +15,21 @@ import DevImg from "./DevImg";
 import Badge from "./Badge";
 import Socials from "./Socials";
 
+const PDF_FILE_URL = "http://localhost:3000/CVAlamNurzaman.pdf";
 const Hero = () => {
+  const downloadFileAtURL = (url) => {
+    fetch(url).then((response) => {
+      response.blob().then((blob) => {
+        const blobURL = window.URL.createObjectURL(blob);
+        const fileName = url.split("/").pop();
+        const aTag = document.createElement("a");
+        aTag.href = blobURL;
+        aTag.setAttribute("download", fileName);
+        aTag.click();
+        aTag.remove();
+      });
+    });
+  };
   return (
     <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className="container mx-auto">
@@ -36,7 +51,11 @@ const Hero = () => {
                   Contact Me <Send size={18} />
                 </Button>
               </Link>
-              <Button variant="secondary" className="gap-x-2">
+              <Button
+                onClick={() => downloadFileAtURL(PDF_FILE_URL)}
+                variant="secondary"
+                className="gap-x-2"
+              >
                 Download CV <Download size={18} />
               </Button>
             </div>
@@ -49,32 +68,32 @@ const Hero = () => {
           {/* image */}
           <div className="hidden xl:flex relative">
             {/* badge 1 */}
-            <Badge
+            {/* <Badge
               containerStyles="absolute top-[24%] -left-[5rem]"
               icon={<RiBriefcase2Fill />}
               endCountNum={3}
               badgeText="Years Of Experience"
-            />
+            /> */}
             {/* badge 2 */}
-            <Badge
+            {/* <Badge
               containerStyles="absolute top-[80%] -left-[1rem]"
               icon={<RiTodoFill />}
               endCountNum={6}
               endCountText="k"
               badgeText="Finished Projects"
-            />
+            /> */}
             {/* badge 3 */}
-            <Badge
+            {/* <Badge
               containerStyles="absolute top-[55%] -right-8"
               icon={<RiTeamFill />}
               endCountNum={9}
               endCountText="k"
               badgeText="Happy Clients"
-            />
+            /> */}
             <div className="bg-hero_shape2_light dark:bg-hero_shape2_dark w-[500px] h-[500px] bg-no-repeat absolute -top-1 -right-2"></div>
             <DevImg
               containerStyles="bg-hero_shape w-[510px] h-[462px] bg-no-repeat relative bg-bottom"
-              imgSrc="/hero/developer.png"
+              imgSrc="/hero/deve.png"
             />
           </div>
         </div>

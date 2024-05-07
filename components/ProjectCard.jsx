@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
             width={247}
             height={250}
             alt=""
-            priority
+            loading="lazy"
           />
           {/* btns */}
           <div className="flex gap-x-4">

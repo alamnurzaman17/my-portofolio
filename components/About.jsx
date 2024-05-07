@@ -107,9 +107,6 @@ const skillData = [
       {
         imgPath: "/about/notion.svg",
       },
-      {
-        imgPath: "/about/wordpress.svg",
-      },
     ],
   },
 ];
