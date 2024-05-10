@@ -15,7 +15,8 @@ import DevImg from "./DevImg";
 import Badge from "./Badge";
 import Socials from "./Socials";
 
-const PDF_FILE_URL = "http://localhost:3000/CVAlamNurzaman.pdf";
+const PDF_FILE_URL =
+  "https://portofolio-alamnurzaman.vercel.app/CVAlamNurzaman.pdf";
 const Hero = () => {
   const downloadFileAtURL = (url) => {
     fetch(url).then((response) => {
