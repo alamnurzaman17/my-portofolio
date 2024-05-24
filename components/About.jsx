@@ -154,7 +154,7 @@ const About = () => {
                     <h3 className="h3 mb-4">
                       I'm a Fresh Gradute of Informatics Engineering
                     </h3>
-                    <p className="subtitle max-w-xl max-auto xl:mx-0">
+                    <p className="subtitle max-w-xl mx-auto xl:mx-0">
                       I am interested in the frontend developer field because I
                       believe that good interface design can transform how users
                       interact with a product, and I want to be a part of that
