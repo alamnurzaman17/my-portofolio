@@ -31,11 +31,6 @@ const Hero = () => {
       });
     });
   };
-
-  const isMobile = /iPhone|iPad|iPod|Android/i.test(navigator.userAgent);
-  const gmailLink = isMobile
-    ? "mailto:alam.nurzaman17@gmail.com?subject=Hello&body=I%20would%20like%20to%20contact%20you"
-    : "https://mail.google.com/mail/?view=cm&fs=1&to=alam.nurzaman17@gmail.com&su=Hello&body=I%20would%20like%20to%20contact%20you";
   return (
     <section className="py-12 xl:py-24 h-[84vh] xl:pt-28 bg-hero bg-no-repeat bg-bottom bg-cover dark:bg-none">
       <div className="container mx-auto">
@@ -52,7 +47,12 @@ const Hero = () => {
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
-              <Link href={gmailLink} target="_blank" rel="noopener noreferrer">
+              =======
+              <Link
+                href="mailto:alam.nurzaman17@gmail.com?subject=Hello&body=I%20would%20like%20to%20contact%20you"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Button className="gap-x-2 text-white">
                   Contact Me <Send size={18} />
                 </Button>
