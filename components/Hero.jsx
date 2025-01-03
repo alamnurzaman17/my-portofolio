@@ -47,7 +47,6 @@ const Hero = () => {
             </p>
             {/* buttons */}
             <div className="flex flex-col gap-y-3 md:flex-row gap-x-3 mx-auto xl:mx-0 mb-12">
-              =======
               <Link
                 href="mailto:alam.nurzaman17@gmail.com?subject=Hello&body=I%20would%20like%20to%20contact%20you"
                 target="_blank"
