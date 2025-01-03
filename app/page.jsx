@@ -14,7 +14,7 @@ export default function Home() {
       <Services />
       <Work />
       {/* <Reviews /> */}
-      <Cta />
+      {/* <Cta /> */}
     </main>
   );
 }

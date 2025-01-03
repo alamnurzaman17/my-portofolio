@@ -16,7 +16,7 @@ import Badge from "./Badge";
 import Socials from "./Socials";
 
 const PDF_FILE_URL =
-  "https://portofolio-alamnurzaman.vercel.app/CVAlamNurzaman.pdf";
+  "https://portofolio-alamnurzaman.vercel.app/CV_AlamNurzaman.pdf";
 const Hero = () => {
   const downloadFileAtURL = (url) => {
     fetch(url).then((response) => {
@@ -61,10 +61,10 @@ const Hero = () => {
               </Button>
             </div>
             {/* socials*/}
-            <Socials
+            {/* <Socials
               containerStyles="flex gap-x-6 mx-auto xl:mx-0"
               iconsStyles="text-foreground text-[22px] hover:text-primary transition-all"
-            />
+            /> */}
           </div>
           {/* image */}
           <div className="hidden xl:flex relative">

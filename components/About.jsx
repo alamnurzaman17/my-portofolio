@@ -31,7 +31,7 @@ const infoData = [
   },
   {
     icon: <GraduationCap size={20} />,
-    text: "Teknik Informatika",
+    text: "Bachelor of Information Engineering",
   },
   {
     icon: <HomeIcon size={20} />,
@@ -46,7 +46,7 @@ const qualificationData = [
       {
         university: "Universitas Sangga Buana YPKP",
         qualification: "S1 Teknik Informatika",
-        years: "2019 - 2024",
+        years: "2019 - 2023",
       },
       {
         university: "SMK ICB Cinta Niaga",
@@ -85,13 +85,13 @@ const skillData = [
         name: "HTML, CSS",
       },
       {
-        name: "Front-end Development",
-      },
-      {
         name: "Javascript, PHP",
       },
       {
-        name: "Back-end Development",
+        name: "NextJs, ReactJs",
+      },
+      {
+        name: "Tailwind, Bootstrap",
       },
     ],
   },
@@ -106,6 +106,9 @@ const skillData = [
       },
       {
         imgPath: "/about/notion.svg",
+      },
+      {
+        imgPath: "/about/ms_logo.svg",
       },
     ],
   },
@@ -126,7 +129,7 @@ const About = () => {
           <div className="hidden xl:flex flex-1 relative">
             <DevImg
               containerStyles="bg-about_shape_light dark:bg-about_shape_dark w-[505px] h-[505px] bg-no-repeat relative"
-              imgSrc="/about/developer.png"
+              imgSrc="/about/develop.png"
             />
           </div>
           {/* tabs */}
@@ -151,9 +154,7 @@ const About = () => {
                 {/* Personal*/}
                 <TabsContent value="personal">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-4">
-                      I'm a Fresh Gradute of Informatics Engineering
-                    </h3>
+                    <h3 className="h3 mb-4">I'm a Junior Web Developer</h3>
                     <p className="subtitle max-w-xl mx-auto xl:mx-0">
                       I am interested in the frontend developer field because I
                       believe that good interface design can transform how users
@@ -186,7 +187,7 @@ const About = () => {
                 <TabsContent value="qualification">
                   <div>
                     <h3 className="h3 mb-8 text-center xl:text-left">
-                      My Awesome Journey
+                      My Journey
                     </h3>
                     {/* experience & education wrapper */}
                     <div className="grid md:grid-cols-2 gap-y-8">
