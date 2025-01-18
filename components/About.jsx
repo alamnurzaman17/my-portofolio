@@ -31,7 +31,7 @@ const infoData = [
   },
   {
     icon: <GraduationCap size={20} />,
-    text: "Bachelor of Information Engineering",
+    text: "Bachelor of Informatics Engineering",
   },
   {
     icon: <HomeIcon size={20} />,
@@ -266,7 +266,7 @@ const About = () => {
                 </TabsContent>
                 <TabsContent value="skills">
                   <div className="text-center xl:text-left">
-                    <h3 className="h3 mb-8"> What I Use Everyday</h3>
+                    <h3 className="h3 mb-8"> What I Use </h3>
                     {/* skills */}
                     <div className="mb-16">
                       <h4 className="text-xl font-semibold mb-2">Skills</h4>
