@@ -59,19 +59,19 @@ const qualificationData = [
     title: "experience",
     data: [
       {
-        company: "lorem ipsum",
-        role: "Web Developer",
-        years: "2022 - 2023",
+        company: "BANGUN RAHMAT TEKNIK",
+        role: "Freelance Web Developer",
+        years: "February 2023 - April 2023",
       },
       {
-        company: "lorem ipsum",
-        role: "Web Developer",
-        years: "2022 - 2023",
+        company: "Posyandu Desa WangunSari",
+        role: "Internship Web Developer",
+        years: "September 2022 - December 2022",
       },
       {
-        company: "lorem ipsum",
-        role: "Web Developer",
-        years: "2022 - 2023",
+        company: "BAPPEDA Jawa Barat",
+        role: "Internship Web Developer",
+        years: "May 2018 - July 2018",
       },
     ],
   },
@@ -93,6 +93,12 @@ const skillData = [
       {
         name: "Tailwind, Bootstrap",
       },
+      {
+        name: "NodeJs, ExpressJs",
+      },
+      {
+        name: "Laravel, CodeIgniter",
+      },
     ],
   },
   {
@@ -109,6 +115,9 @@ const skillData = [
       },
       {
         imgPath: "/about/ms_logo.svg",
+      },
+      {
+        imgPath: "/about/github-mark.svg",
       },
     ],
   },
