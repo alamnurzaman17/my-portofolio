@@ -16,7 +16,7 @@ import Badge from "./Badge";
 import Socials from "./Socials";
 
 const PDF_FILE_URL =
-  "https://portofolio-alamnurzaman.vercel.app/CV_AlamNurzaman.pdf";
+  "https://portofolio-alamnurzaman.vercel.app/CVAlamNurzaman.pdf";
 const Hero = () => {
   const downloadFileAtURL = (url) => {
     fetch(url).then((response) => {
