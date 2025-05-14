@@ -6,16 +6,16 @@ import ProjectCard from "@/components/ProjectCard";
 
 const projectData = [
   {
-    image: "/work/3.png",
-    category: "react js",
-    name: "Solstice Website",
+    image: "/work/6.png",
+    category: "next js",
+    name: "Lead On Global Portfolio",
     description:
       "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-    link: "/",
-    github: "/",
+    link: "https://log-portofolio.vercel.app/",
+    github: "https://github.com/alamnurzaman17/log_porto",
   },
   {
-    image: "/work/4.png",
+    image: "/work/6.png",
     category: "react js",
     name: "Lamu Website",
     description:
@@ -23,60 +23,60 @@ const projectData = [
     link: "/",
     github: "/",
   },
-  {
-    image: "/work/2.png",
-    category: "next js",
-    name: "Lumina Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/1.png",
-    category: "next js",
-    name: "Evolve Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/3.png",
-    category: "next js",
-    name: "ignite Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/4.png",
-    category: "next js",
-    name: "Envision Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/3.png",
-    category: "fullstack",
-    name: "Nova Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/2.png",
-    category: "fullstack",
-    name: "Zenits Website",
-    description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-    link: "/",
-    github: "/",
-  },
+  // {
+  //   image: "/work/2.png",
+  //   category: "next js",
+  //   name: "Lumina Website",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
+  //   link: "/",
+  //   github: "/",
+  // },
+  // {
+  //   image: "/work/1.png",
+  //   category: "next js",
+  //   name: "Evolve Website",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
+  //   link: "/",
+  //   github: "/",
+  // },
+  // {
+  //   image: "/work/3.png",
+  //   category: "next js",
+  //   name: "ignite Website",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
+  //   link: "/",
+  //   github: "/",
+  // },
+  // {
+  //   image: "/work/4.png",
+  //   category: "next js",
+  //   name: "Envision Website",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
+  //   link: "/",
+  //   github: "/",
+  // },
+  // {
+  //   image: "/work/3.png",
+  //   category: "fullstack",
+  //   name: "Nova Website",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
+  //   link: "/",
+  //   github: "/",
+  // },
+  // {
+  //   image: "/work/2.png",
+  //   category: "fullstack",
+  //   name: "Zenits Website",
+  //   description:
+  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
+  //   link: "/",
+  //   github: "/",
+  // },
 ];
 
 // remove category duplicates
