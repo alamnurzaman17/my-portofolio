@@ -14,168 +14,161 @@ import "swiper/css/pagination";
 import { Pagination } from "swiper/modules";
 
 //component
-import ProjectCard from "@/components/ProjectCard";
+import ProjectCard from "@/components/ProjectCard"; // Ensure ProjectCard is responsive
 
 const projectData = [
   {
     image: "/work/6.png",
-    category: "Next js",
+    category: "next js",
     name: "Lead On Global Portfolio",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
+      "A dynamic and responsive Next.js portfolio website developed for Lead On Global, showcasing their projects, services, and company profile to a global audience.",
     link: "https://log-portofolio.vercel.app/",
     github: "https://github.com/alamnurzaman17/log_porto",
   },
   {
-    image: "/work/6.png",
-    category: "react js",
-    name: "Lamu Website",
+    image: "/work/7.png",
+    category: "next js",
+    name: "Book Wise",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
+      "An intuitive Next.js application designed as a university library system, enabling users to efficiently browse, search for, and explore book collections.",
+    link: "https://university-library-alpha-roan.vercel.app",
+    github: "https://university-library-alpha-roan.vercel.app/",
+  },
+  {
+    image: "/work/1.png", // Placeholder
+    category: "react js",
+    name: "Example Project 3",
+    description:
+      "Another great project highlighting different skills and technologies.",
     link: "/",
     github: "/",
   },
-  // {
-  //   image: "/work/6.png",
-  //   category: "next js",
-  //   name: "Lumina Website",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-  //   link: "/",
-  //   github: "/",
-  // },
-  // {
-  //   image: "/work/1.png",
-  //   category: "next js",
-  //   name: "Evolve Website",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-  //   link: "/",
-  //   github: "/",
-  // },
-  // {
-  //   image: "/work/3.png",
-  //   category: "next js",
-  //   name: "ignite Website",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-  //   link: "/",
-  //   github: "/",
-  // },
-  // {
-  //   image: "/work/4.png",
-  //   category: "next js",
-  //   name: "Envision Website",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-  //   link: "/",
-  //   github: "/",
-  // },
-  // {
-  //   image: "/work/3.png",
-  //   category: "fullstack",
-  //   name: "Nova Website",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-  //   link: "/",
-  //   github: "/",
-  // },
-  // {
-  //   image: "/work/2.png",
-  //   category: "fullstack",
-  //   name: "Zenits Website",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-  //   link: "/",
-  //   github: "/",
-  // },
+  {
+    image: "/work/3.png", // Placeholder
+    category: "express js",
+    name: "Example Project 4",
+    description:
+      "A full-stack application demonstrating end-to-end development capabilities.",
+    link: "/",
+    github: "/",
+  },
 ];
 
 const Work = () => {
   const projectsToDisplay = projectData.slice(0, 4);
   const numProjectsToDisplay = projectsToDisplay.length;
 
-  // 3. Definisikan breakpoints secara dinamis
-  //    Ini hanya akan diterapkan jika ada LEBIH DARI 1 slide total
   let swiperBreakpoints = {};
   if (numProjectsToDisplay > 1) {
     swiperBreakpoints = {
       640: {
-        // 'sm' breakpoint
+        // sm
+        slidesPerView: numProjectsToDisplay >= 2 ? 2 : 1,
+        spaceBetween: 24,
+      },
+      1024: {
+        // lg - for the side-by-side desktop layout
         slidesPerView: 2,
+        spaceBetween: 20, // Keep this relatively small for closer cards
       },
     };
   }
-  if (numProjectsToDisplay === 0) {
-    return (
-      <section className="relative mb-12 xl:mb-48">
-        <div className="container mx-auto">
-          <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
-            <h2 className="section-title mb-4">Latest Project</h2>
-            <p className="subtitle mb-8">
-              No projects to display at the moment.
-            </p>
-            <Link href="/projects">
-              <Button>View All</Button>
-            </Link>
-          </div>
-          {/* Placeholder untuk area slider agar layout konsisten */}
-          <div className="xl:max-w-[1000px] xl:absolute right-0 top-0 h-[480px] flex items-center justify-center text-gray-500">
-            {/* Konten placeholder atau kosong */}
-          </div>
-        </div>
-      </section>
-    );
-  }
-  return (
-    <section className="relative mb-12 xl:mb-48">
-      <div className="container mx-auto">
-        {/* text */}
-        <div className="max-w-[400px] mx-auto xl:mx-0 text-center xl:text-left mb-12 xl:h-[400px] flex flex-col justify-center items-center xl:items-start">
-          <h2 className="section-title mb-4">Latest Project</h2>
+
+  const projectCardAreaHeight =
+    "min-h-[460px] sm:min-h-[480px] md:min-h-[500px]";
+  const paginationAreaHeight = "h-[60px]";
+
+  const renderContent = () => {
+    if (numProjectsToDisplay === 0) {
+      return (
+        <div className="w-full xl:w-auto flex flex-col justify-center items-center text-center xl:items-start xl:text-left py-10 xl:py-0">
+          <h2 className="section-title mb-4">Latest Projects</h2>
           <p className="subtitle mb-8">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
-            aut iusto vitae.
+            No projects to display at the moment. Check back soon!
           </p>
           <Link href="/projects">
-            <Button>View All</Button>
+            <Button>Explore All Projects</Button>
           </Link>
         </div>
-        {/* Slider */}
-        <div className="xl:max-w-[1000px] xl:absolute right-0 top-0 h-[480px] sm:h-[500px] md:h-[520px]">
-          {numProjectsToDisplay === 1 ? (
-            // --- Tampilan untuk SATU Proyek ---
-            // Bungkus dengan div untuk menerapkan flexbox centering
-            // items-center untuk vertikal, justify-center untuk horizontal
-            <div className="w-full h-full flex items-center justify-center p-4">
-              {/* 
-                ProjectCard Anda HARUS memiliki max-width yang ditetapkan di dalamnya 
-                agar tidak meregang penuh.
-                Misal: className="max-w-sm" atau "max-w-md" di dalam ProjectCard.js
-              */}
-              <ProjectCard project={projectsToDisplay[0]} />
-            </div>
-          ) : (
-            // --- Tampilan untuk LEBIH DARI SATU Proyek (menggunakan Swiper) ---
-            <Swiper
-              className="h-full" // Ambil tinggi penuh dari parent (.h-[480px] etc.)
-              slidesPerView={1} // Default mobile: 1 slide
-              centeredSlides={false} // Tidak perlu centering untuk grup
-              breakpoints={swiperBreakpoints}
-              spaceBetween={30}
-              modules={[Pagination]}
-              pagination={{ clickable: true }}
-            >
-              {/* show only the first 4 projects for the slides */}
-              {projectsToDisplay.map((project, index) => {
-                return (
-                  <SwiperSlide key={project.name + index}>
-                    <ProjectCard project={project} />
+      );
+    }
+
+    return (
+      <>
+        {/* Text Content */}
+        <div className="w-full xl:w-[380px] xl:mr-8 flex-shrink-0 flex flex-col justify-center items-center text-center xl:items-start xl:text-left mb-12 xl:mb-0">
+          <h2 className="section-title mb-4">Latest Projects</h2>
+          <p className="subtitle mb-8">
+            Take a look at some of my recent work and see how I can bring your
+            ideas to life.
+          </p>
+          <Link href="/projects">
+            <Button>View All Projects</Button>
+          </Link>
+        </div>
+
+        {/* Slider / Single Card Area */}
+        <div className="w-full xl:flex-1 xl:max-w-[900px] relative">
+          <div className={`w-full flex flex-col`}>
+            {numProjectsToDisplay === 1 ? (
+              <div
+                className={`${projectCardAreaHeight} w-full flex items-center justify-center p-4`}
+              >
+                <div className="max-w-md w-full">
+                  {" "}
+                  {/* Wrapper for single card */}
+                  <ProjectCard project={projectsToDisplay[0]} />
+                </div>
+              </div>
+            ) : (
+              <Swiper
+                className={`${projectCardAreaHeight} w-full`}
+                slidesPerView={1}
+                spaceBetween={numProjectsToDisplay > 1 ? 24 : 0} // Default spaceBetween for mobile
+                modules={[Pagination]}
+                pagination={{
+                  clickable: true,
+                  el: ".custom-swiper-pagination",
+                }}
+                breakpoints={swiperBreakpoints}
+              >
+                {projectsToDisplay.map((project, index) => (
+                  <SwiperSlide
+                    key={project.name + index}
+                    className="flex justify-center items-start pt-4 pb-2 sm:pt-6 sm:pb-3"
+                  >
+                    <div className="w-full max-w-md sm:max-w-lg">
+                      {" "}
+                      {/* Card width constraint inside slide */}
+                      <ProjectCard project={project} />
+                    </div>
                   </SwiperSlide>
-                );
-              })}
-            </Swiper>
-          )}
+                ))}
+              </Swiper>
+            )}
+
+            {numProjectsToDisplay > 1 && (
+              <div
+                className={`custom-swiper-pagination ${paginationAreaHeight} flex justify-center items-center w-full`}
+              ></div>
+            )}
+          </div>
+        </div>
+      </>
+    );
+  };
+
+  return (
+    <section className="relative mb-12 xl:mb-36 xl:pt-8">
+      <div className="container mx-auto">
+        {/* MODIFIED: Using xl:justify-start to align content to the left if space is available after constraining slider width */}
+        <div
+          className={`flex flex-col ${
+            numProjectsToDisplay > 0 ? "xl:flex-row xl:justify-start" : ""
+          } items-center xl:items-start`}
+        >
+          {renderContent()}
         </div>
       </div>
     </section>

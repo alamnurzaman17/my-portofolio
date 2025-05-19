@@ -10,73 +10,37 @@ const projectData = [
     category: "next js",
     name: "Lead On Global Portfolio",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
+      "A dynamic and responsive Next.js portfolio website developed for Lead On Global, showcasing their projects, services, and company profile to a global audience.",
     link: "https://log-portofolio.vercel.app/",
     github: "https://github.com/alamnurzaman17/log_porto",
   },
   {
-    image: "/work/6.png",
-    category: "react js",
-    name: "Lamu Website",
+    image: "/work/7.png",
+    category: "next js",
+    name: "Book Wise",
     description:
-      "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
+      "An intuitive Next.js application designed as a university library system, enabling users to efficiently browse, search for, and explore book collections.",
+    link: "https://university-library-alpha-roan.vercel.app",
+    github: "https://university-library-alpha-roan.vercel.app/",
+  },
+  {
+    image: "/work/1.png", // Placeholder
+    category: "react js",
+    name: "Example Project 3",
+    description:
+      "Another great project highlighting different skills and technologies.",
     link: "/",
     github: "/",
   },
-  // {
-  //   image: "/work/2.png",
-  //   category: "next js",
-  //   name: "Lumina Website",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-  //   link: "/",
-  //   github: "/",
-  // },
-  // {
-  //   image: "/work/1.png",
-  //   category: "next js",
-  //   name: "Evolve Website",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-  //   link: "/",
-  //   github: "/",
-  // },
-  // {
-  //   image: "/work/3.png",
-  //   category: "next js",
-  //   name: "ignite Website",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-  //   link: "/",
-  //   github: "/",
-  // },
-  // {
-  //   image: "/work/4.png",
-  //   category: "next js",
-  //   name: "Envision Website",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-  //   link: "/",
-  //   github: "/",
-  // },
-  // {
-  //   image: "/work/3.png",
-  //   category: "fullstack",
-  //   name: "Nova Website",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-  //   link: "/",
-  //   github: "/",
-  // },
-  // {
-  //   image: "/work/2.png",
-  //   category: "fullstack",
-  //   name: "Zenits Website",
-  //   description:
-  //     "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto, autem!",
-  //   link: "/",
-  //   github: "/",
-  // },
+  {
+    image: "/work/3.png", // Placeholder
+    category: "express js",
+    name: "Example Project 4",
+    description:
+      "A full-stack application demonstrating end-to-end development capabilities.",
+    link: "/",
+    github: "/",
+  },
 ];
 
 // remove category duplicates
