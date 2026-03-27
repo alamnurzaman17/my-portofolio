@@ -36,21 +36,12 @@ const projectData = [
     github: "https://university-library-alpha-roan.vercel.app/",
   },
   {
-    image: "/work/1.png", // Placeholder
-    category: "react js",
-    name: "Example Project 3",
+    image: "/work/8.png", // Placeholder
+    category: "next js",
+    name: "PlasticycleGIS",
     description:
-      "Another great project highlighting different skills and technologies.",
-    link: "/",
-    github: "/",
-  },
-  {
-    image: "/work/3.png", // Placeholder
-    category: "express js",
-    name: "Example Project 4",
-    description:
-      "A full-stack application demonstrating end-to-end development capabilities.",
-    link: "/",
+      "An interactive GIS-based web application that helps users identify, manage, and explore waste data through intuitive mapping and educational features.",
+    link: "https://gis-sampah-app.vercel.app/",
     github: "/",
   },
 ];
