@@ -59,6 +59,12 @@ const qualificationData = [
     title: "experience",
     data: [
       {
+        company:
+          "GEOSPATIAL INTELLIGENCE SOLUTION FOR SUSTAINABILITY ACTION (GISACT)",
+        role: "Frontend Web Developer",
+        years: "July 2025 - Oktober 2025",
+      },
+      {
         company: "BANGUN RAHMAT TEKNIK",
         role: "Freelance Web Developer",
         years: "February 2023 - April 2023",
@@ -231,7 +237,7 @@ const About = () => {
                                   </div>
                                 </div>
                               );
-                            }
+                            },
                           )}
                         </div>
                       </div>
@@ -266,7 +272,7 @@ const About = () => {
                                   </div>
                                 </div>
                               );
-                            }
+                            },
                           )}
                         </div>
                       </div>
@@ -293,7 +299,7 @@ const About = () => {
                                 <div className="font-medium">{name}</div>
                               </div>
                             );
-                          }
+                          },
                         )}
                       </div>
                     </div>
