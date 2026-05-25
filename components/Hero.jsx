@@ -16,7 +16,7 @@ import DevImg from "./DevImg";
 // import Socials from "./Socials";
 
 const PDF_FILE_URL =
-  "https://portofolio-alamnurzaman.vercel.app/CVAlamNurzaman.pdf";
+  "https://portofolio-alamnurzaman.vercel.app/CV_Alam_Nurzaman.pdf";
 
 const Hero = () => {
   const downloadFileAtURL = (url) => {
